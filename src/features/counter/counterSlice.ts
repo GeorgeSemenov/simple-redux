@@ -1,5 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+//метод createSlice - создаёт slice в котором будут
+//методы для изменения состояния и само состояния
+//Этот редуктор мы экспортируем, чтобы инициализировать им
+//соответсвтующее поле в сторе см store.ts
 const counterSlice = createSlice({
   name: "counter",
   initialState: {

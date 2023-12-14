@@ -5,7 +5,8 @@ import { decrement, increment, incrementByAmount } from "./counterSlice";
 export default function Counter() {
   //useSelector - используют для доступа к состоянию
   //useSelector - хук, который принимает другую функцию
-  //возаращаемое значение которой будет состоянием
+  //Принимающего состояние, описанное в store.ts, эта функция
+  //возаращает значение которое и будет состоянием
   const count = useSelector((state: iKekState) => state.counter.value);
 
   //useDispatch - хук, который возвращает функцию
